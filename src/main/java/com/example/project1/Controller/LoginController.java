@@ -13,4 +13,13 @@ public class LoginController {
 
     }
 
+    @GetMapping("/home")
+    public String homePage(){
+        return "index";
+    }
+    @GetMapping("/error")
+    public String errorPage(){
+        return "error";
+    }
+
 }
